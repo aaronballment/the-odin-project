@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let userInput = parseInt(prompt("Please enter the number you would like to FizzBuzz up to : "))
+    for (i = 1; i <= userInput; i++){
+        if (i % 3 === 0 && i % 5 === 0){
+            word = 'fizzbuzz';
+        }
+        else if (i % 5 === 0){
+            word = 'buzz';
+        }
+        else if (i % 3 === 0){
+            word = 'fizz';
+        }
+        else {
+            word = i;
+        }
+        console.log(word)
+    }
+    </script>
+</body>
+</html>
